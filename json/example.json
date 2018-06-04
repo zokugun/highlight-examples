@@ -1,0 +1,15 @@
+{
+	"foo": 42,
+	"bar": [
+		"qux"
+	],
+	// Theme
+	"tokenColors": [
+		{
+			"settings": {
+				"foreground": "#000",
+				"background": "#9f9"
+			}
+		}
+	]
+}

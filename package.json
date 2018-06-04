@@ -1,0 +1,30 @@
+{
+	"name": "@zokugun/highlight-examples",
+	"description": "Test cases for syntax highlighters and themes",
+	"version": "0.1.0",
+	"since": "2018-06-04",
+	"author": {
+		"name": "Baptiste Augrain",
+		"email": "daiyam@zokugun.org"
+	},
+	"homepage": "https://github.com/zokugun/highlight-examples",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zokugun/highlight-examples.git"
+	},
+	"bugs": {
+		"url": "https://github.com/zokugun/highlight-examples/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"dependencies": {},
+	"devDependencies": {},
+	"keywords": [
+		"highlight",
+		"theme"
+	]
+}

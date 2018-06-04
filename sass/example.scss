@@ -1,0 +1,85 @@
+/**
+ * sass.scss
+ * Version 1.0.0
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ **/
+
+// single line comment
+/* single line comment */
+
+.btn {
+	color: #FFF;
+	background-image: none;
+	font-size: 1rem;
+	
+	a.nav-link {
+		display: flex;
+		color: #FFF;
+		padding: 0;
+		
+		@include hover-state {
+			color: #FFF;
+		}
+	}
+	
+	.label {
+		font-weight: 800;
+	}
+}
+
+.btn + .btn {
+	margin-left: 2rem;
+	
+	@include media-breakpoint-down(lg) {
+		margin-left: 1rem;
+	}
+}
+
+#foobar {
+	color: red;
+	
+	&:hover, &:active, &:focus {
+		color: black;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#foobar {
+		display: none;
+	}
+}
+
+//! At-rules
+@import "foo.scss";
+
+@media (min-width: 600px) {
+	
+}
+
+.seriousError {
+    @extend .error;
+}
+
+@for $i from 1 through 3 {
+	
+}
+
+//! Compass URLs
+@font-face {
+	font-family: "opensans";
+	src: font-url("opensans.ttf");
+}
+
+//! Variables
+$width: 5em;
+
+#main {
+    width: $width;
+}
+
+//! Interpolations are highlighted in property names
+p.#{$name} {
+    #{$attr}-color: blue;
+}
