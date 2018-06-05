@@ -4,6 +4,9 @@
 // Single line comment
 /* Multi-line
 comment */
+/**
+ * Doc
+ */
 # Shell-like comment
 
 //! Strings
@@ -48,6 +51,8 @@ function gen_one_to_three() {
     }
 }
 
+gen_one_to_three();
+
 //! PHP embedded in HTML
 ?>
 <div class="<?php echo $a ? 'foo' : 'bar'; ?>">
@@ -68,3 +73,25 @@ FOO;
 $b = <<<"FOOBAR"
     Interpolation inside Heredoc strings {$obj->values[3]->name}
 FOOBAR;
+?>
+
+<div class="content">
+    <?php while (have_posts()) : the_post(); $url = get_post_meta($post->ID, '_target_url')[0]; ?>
+        <article class="col-12 col-lg-6">
+            <div class="thumbnail">
+                <?php if ( $url ) : ?>
+                <a href="<?php echo esc_url($url); ?>" target="_blank"><?php the_post_thumbnail() ?></a>
+                <?php else : ?>
+                <?php the_post_thumbnail()) ?>
+                <?php endif; ?>
+            </div>
+            <div class="title">
+                <?php if ( $url ) : ?>
+                <a href="<?php echo esc_url($url); ?>" target="_blank"><?php the_title(); ?></a>
+                <?php else : ?>
+                <?php the_title(); ?>
+                <?php endif; ?>
+            </div>
+        </article>
+    <?php endwhile; ?>
+</div>
