@@ -14,6 +14,7 @@ Title 2
 
 --- Bold and italic ---
 *Italic*
+**Bold**
 **Bold on
 multiple lines**
 *Italic on
@@ -30,7 +31,12 @@ is not allowed__
 [Prism](http://www.prismjs.com "Prism")
 
 [prism link]: http://www.prismjs.com (Prism)
+[Prism][prism link]
 [Prism] [prism link]
+
+--- Images ---
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
 --- Lists and quotes ---
 * This is
@@ -47,6 +53,10 @@ is not allowed__
 >> With another quotation inside
 > _italic here_, __bold there__
 > And a [link](http://example.com)
+
+1. First list item
+   - First nested list item
+     - Second nested list item
 
 --- Code ---
 Inline code between backticks `<p>Paragraph</p>`
@@ -72,3 +82,32 @@ _ [But link inside italic DOES work](http://example.com) _
 
 [Link partially **bold** DOESN'T work](http://example.com)
 __ [But link inside bold DOES work](http://example.com) __
+
+--- Quoting ---
+Use `git status` to list all new or modified files that haven't yet been committed.
+
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+
+--- Task List ---
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+--- Table ---
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
