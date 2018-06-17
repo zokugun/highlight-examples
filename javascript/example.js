@@ -33,7 +33,7 @@ var foo = "bar", baz = 5;
 
 //! Indented code
 if(true) {
-	while(true) {
+	while(false) {
 		doSomething();
 	}
 }
@@ -137,3 +137,6 @@ lang.global.extends('Math', {
 		return Math.min(max, Math.max(value, min));
 	}
 });
+
+let foobar = `${this.props.title}`
+let foobar = `${this.props.foobar}`
