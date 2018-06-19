@@ -1,4 +1,5 @@
-a.button
+#content
+  a.button
 
 div(class='div-class', (click)='play()')
 div(class='div-class' '(click)'='play()')
@@ -18,4 +19,14 @@ mixin article(title)
   p This is my
   p Amazing article
 
-#title #{this.props.title}  
+#title #{this.props.title} | title
+
+p.
+  And here's an example of an interpolated tag with an attribute:
+  #[q(lang="es") ¡Hola Mundo!]
+
+- var riskyBusiness = "<em>Some of the girls are wearing my mother's clothing.</em>";
+.quote
+  p Joel: !{riskyBusiness}
+
+p Escaping works with \#{interpolation}
