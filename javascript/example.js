@@ -1,6 +1,6 @@
 //! Header comment
 /**
- * javascript.js
+ * example.js
  * Version 1.0.0
  *
  * Licensed under the MIT license.

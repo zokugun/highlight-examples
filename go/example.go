@@ -1,3 +1,12 @@
+//! Header comment
+/**
+ * example.go
+ * Version 1.0.0
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ **/
+
 //! Comments
 // This is a comment
 /* This is a comment
@@ -64,4 +73,14 @@ func main() {
 	x, y := <-c, <-c // receive from c
 
 	fmt.Println(x, y, x+y)
+}
+
+//! Struct
+type Email struct {
+	SMTP     string
+	Password string
+	Port     string
+	From     string
+	To       []string
+	Subject  string
 }
