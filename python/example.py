@@ -48,3 +48,8 @@ def median(pool):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+
+//! foreach
+a = ['foo', 'bar', 'baz']
+for i in a:
+    print(i)

@@ -12,7 +12,7 @@
 foo
 
 bar
-*/
+ */
 
 //! Link in comment
 // http://lea.verou.me
@@ -138,5 +138,23 @@ lang.global.extends('Math', {
 	}
 });
 
-let foobar = `${this.props.title}`
+//! Accessors
 let foobar = `${this.props.foobar}`
+
+let foobar = props.foobar
+let foobar = props[foobar]
+
+//! Array
+[1, 2, 3]
+
+//! Object
+let foo = [
+	{
+		x: 4,
+		y: 2
+	},
+	{
+		x: 2,
+		y: 4
+	}
+]

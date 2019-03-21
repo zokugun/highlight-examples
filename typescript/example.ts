@@ -73,7 +73,7 @@ Utility.log('');
 
 //! Access Modifiers
 class FooBase {
-    public x: number;
+    public x: foo;
     private y: number;
     protected z: number;
 }
@@ -134,4 +134,28 @@ import {Foo} from "./foo";
 
 //! Export
 export class Foo {
+}
+
+//! Array
+let a = [1, 2, 3]
+let a = foo[1]
+
+//! Object
+let foo = [
+	{
+		x: 4,
+		y: 2
+	},
+	{
+		x: 2,
+		y: 4
+	}
+]
+
+//! async/await
+async function printDelayed(elements: string[]) {
+    for (const element of elements) {
+        await delay(400);
+        console.log(element);
+    }
 }
