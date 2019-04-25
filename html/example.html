@@ -29,7 +29,7 @@
 
 <!-- CDATA section -->
 <ns1:description><![CDATA[
-  CDATA is <not> magical.
+	CDATA is <not> magical.
 ]]></ns1:description>
 
 <!-- Comment -->
@@ -38,3 +38,35 @@ And i'm not
 
 <!-- Entities -->
 &amp; &#x2665; &#160; &#x152;
+
+<!-- Full Example -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<style>
+		.body {
+			width: 500px;
+		}
+	</style>
+	<script type="application/javascript">
+		const _init = true;
+		
+		function $init() {
+			return _init;
+		}
+	</script>
+</head>
+<body>
+	<header>
+	<h1>Example HTML</h1>
+	</header>
+	<main class="style">
+		<p>Some text</p>
+		<!-- here goes the rest of the page -->
+	</main>
+</body>
+</html>

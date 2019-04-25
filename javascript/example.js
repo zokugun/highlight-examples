@@ -66,6 +66,17 @@ let foo = {
 	}
 }
 
+//! Regex "y" and "u" flags
+/[a-zA-Z]+/gimyu
+
+//! Template strings
+`Only on ${y} one line`
+`This template string ${x} is on
+
+multiple lines.`
+`40 + 2 = ${ 40 + 2 }`
+`The squares of the first 3 natural integers are ${[for (x of [1,2,3]) x*x].join(', ')}`
+
 //! get the time
 const start = new Date().getTime();
 const start = new GMTDate().getTime();
@@ -74,11 +85,10 @@ setTimeout(function() {
 	console.log('hello');
 }, 1000);
 
-//! Regex "y" and "u" flags
-/[a-zA-Z]+/gimyu
-
 //! Loop for/of
-for(let x of y) { }
+for(let x of y) {
+	
+}
 
 //! Function
 function foo() {
@@ -92,15 +102,6 @@ import { foo as bar } from "file.js"
 //! Export
 export default bar
 
-//! Template strings
-`Only on ${y} one line`
-`This template string ${x} is on
-
-multiple lines.`
-`40 + 2 = ${ 40 + 2 }`
-`The squares of the first 3 natural integers are ${[for (x of [1,2,3]) x*x].join(', ')}`
-
-
 //! Template with properties
 const DIV = styled.div`
 	animation: ${props => props.delay} ${props => keyframes`${props.animation}`};
@@ -113,10 +114,10 @@ export default class Page extends React.Component {
 		const seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' )
 		
 		return (
-			<div>
+			<DIV>
 				<label>seconds:</label>
 				<div class="value">{seconds}</div>
-			</div>
+			</DIV>
 		)
 	}
 }
