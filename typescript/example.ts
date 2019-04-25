@@ -141,7 +141,7 @@ let a = [1, 2, 3]
 let a = foo[1]
 
 //! Object
-let foo = [
+const foo = [
 	{
 		x: 4,
 		y: 2
@@ -149,7 +149,22 @@ let foo = [
 	{
 		x: 2,
 		y: 4
-	}
+	},
+	{
+		foobar: foobar
+	},
+	{
+		foobar
+	},
+	{
+		'\(foobar)': foobar
+	},
+	{
+		[foobar]: foobar
+	},
+    {
+        bar() => 2
+    }
 ]
 
 //! async/await
@@ -158,4 +173,12 @@ async function printDelayed(elements: string[]) {
         await delay(400);
         console.log(element);
     }
+}
+
+//! Attributes
+@log
+@validate
+@authorize
+function add(x, y) {
+    return x + y;
 }

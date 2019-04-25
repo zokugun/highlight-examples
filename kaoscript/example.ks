@@ -13,7 +13,6 @@
 on multiple lines */
 
 //! Import
-
 import 'path'
 
 import 'language' => Lang {
@@ -25,12 +24,14 @@ import 'language' => Lang {
 
 //! Class
 class Greeter {
-    greeting: String
+    private {
+        greeting: String
+    }
     constructor(message: string) {
         this.greeting = message
     }
     greet() {
-        return "Hello, " + this.greeting
+        return `Hello, \(@greeting)`
     }
 }
 
@@ -40,8 +41,8 @@ console.log(greeter.greet())
 
 //! Enum
 enum Color {
-    Red,
-    Green,
+    Red
+    Green
     Blue
 }
 
@@ -49,12 +50,17 @@ console.log(Color.Red)
 
 //! Namespace
 namespace Utility {
-    export function log(msg) {
+    export func log(msg) {
         console.log(msg)
     }
-    export function error(msg) {
+    export func error(msg) {
         console.error(msg)
     }
 }
 
 Utility.log('')
+
+//! Loop
+for const value in values {
+    
+}

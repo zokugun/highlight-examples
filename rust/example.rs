@@ -69,3 +69,8 @@ for n in 1..11 {
     sum += n;
 }
 assert_eq!(sum, 55);
+
+//! Attributes
+#[cfg(target_os = "linux")]
+mod bar {
+}

@@ -90,3 +90,52 @@ int[] intArray2 = new int[5]{1, 2, 3, 4, 5};
 int? a = 2;
 int? b = 3;
 int? c = null;
+
+//! Operator
+int y = x ?? -1;
+
+//! Enum
+enum WeekDays
+{
+    Monday = 0,
+    Tuesday =1,
+    Wednesday = 2,
+    Thursday = 3,
+    Friday = 4,
+    Saturday =5,
+    Sunday = 6
+}
+
+//! Properties
+public class SaleItem
+{
+   string _name;
+   decimal _cost;
+   
+   public SaleItem(string name, decimal cost)
+   {
+      _name = name;
+      _cost = cost;
+   }
+
+   public string Name 
+   {
+      get => _name;
+      set => _name = value;
+   }
+
+   public decimal Price
+   {
+      get => _cost;
+      set => _cost = value; 
+   }
+}
+
+//! Attributes
+[System.Runtime.InteropServices.DllImport("user32.dll")]
+extern static void SampleMethod();
+
+[Conditional("DEBUG"), Conditional("TEST1")]
+void TraceMethod()
+{
+}

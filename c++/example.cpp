@@ -1,3 +1,11 @@
+//! Header comment
+/**
+ * example.cpp
+ * Version 1.0.0
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ **/
 /*
 David Cary 2010-09-14
 quick demo for wikibooks

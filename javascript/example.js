@@ -156,5 +156,17 @@ let foo = [
 	{
 		x: 2,
 		y: 4
+	},
+	{
+		foobar: foobar
+	},
+	{
+		foobar
+	},
+	{
+		'\(foobar)': foobar
+	},
+	{
+		[foobar]: foobar
 	}
 ]

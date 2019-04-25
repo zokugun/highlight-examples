@@ -30,7 +30,7 @@ comment */
 import java.util.Scanner;
 
 public class Life {
-
+	
     @Override @Bind("One")
     public void show(boolean[][] grid){
         String s = "";
