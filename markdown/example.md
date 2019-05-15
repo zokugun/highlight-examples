@@ -1,3 +1,7 @@
+---
+name: Hello world
+---
+
 --- Titles ---
 Title 1
 =======

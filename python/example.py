@@ -49,7 +49,17 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod()
 
-//! foreach
+#! Foreach
 a = ['foo', 'bar', 'baz']
 for i in a:
     print(i)
+    
+#! Class
+class Dog:
+
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []
+
+    def add_trick(self, trick):
+        self.tricks.append(trick)

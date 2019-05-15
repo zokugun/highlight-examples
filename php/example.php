@@ -48,8 +48,44 @@ function gen_one_to_three() {
     for ($i = 1; $i <= 3; $i++) {
         // Note that $i is preserved between yields.
         yield $i;
-    }
+    }    
 }
+
+                                                                                                                                                                                                                        //
+                                                                                                                                                                                                                            function gen_one_to_three() {
+                                                                                                                                                                                                                                for ($i = 1; $i <= 3; $i++) {
+                                                                                                                                                                                                                                    // Note that $i is preserved between yields.
+                                                                                                                                                                                                                                    yield $i;
+                                                                                                                                                                                                                                }    
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                                            function gen_one_to_three() {
+                                                                                                                                                                                                                                for ($i = 1; $i <= 3; $i++) {
+                                                                                                                                                                                                                                    // Note that $i is preserved between yields.
+                                                                                                                                                                                                                                    yield $i;
+                                                                                                                                                                                                                                }    
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                                            <table style="width:100%">
+                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                    <th>Firstname</th>
+                                                                                                                                                                                                                                    <th>Lastname</th> 
+                                                                                                                                                                                                                                    <th>Age</th>
+                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                    <td>Jill</td>
+                                                                                                                                                                                                                                    <td>Smith</td> 
+                                                                                                                                                                                                                                    <td>50</td>
+                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                    <td>Eve</td>
+                                                                                                                                                                                                                                    <td>Jackson</td> 
+                                                                                                                                                                                                                                    <td>94</td>
+                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                            </table>
+                                                                                                                                                                                                                        //
+
 
 gen_one_to_three();
 
