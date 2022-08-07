@@ -1,0 +1,12 @@
+{
+	"javascript": [
+		{
+			"begin": "{",
+			"end": "}",
+		},
+		{
+			"indentation": true,
+			"offSide": true,
+		},
+	]
+}

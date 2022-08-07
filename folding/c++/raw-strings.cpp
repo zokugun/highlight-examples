@@ -17,8 +17,15 @@ bar
 
 this is the part the doesn't work:
 <4>
-(  folding should start here, but it doesn't
+(  folding starts here
     123
-    ()""  folding starts here, but it shouldn't
+    ()""
     456
 )  folding ends here
+
+<5>
+{  folding starts here
+123
+//  }
+456
+}  folding ends here

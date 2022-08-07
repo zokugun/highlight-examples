@@ -1,0 +1,12 @@
+{
+	"cobol": [
+		{
+			"separatorRegex": "\\S+\\s+DIVISION",
+			"descendants": [
+				{
+					"separatorRegex": "\\S+\\s+SECTION",
+				}
+			]
+		},
+	],
+}

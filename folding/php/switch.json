@@ -1,0 +1,34 @@
+{
+	"php": [
+		{
+			"beginRegex": "(?:case|default)[^:]*:",
+			"endRegex": "break;|(.)(?=case|default|\\})",
+			"foldLastLine": [true, false]
+		},
+		{
+			"beginRegex": "\\{",
+			"middleRegex": "\\}[^}]+\\{",
+			"endRegex": "\\}"
+		},
+		{
+			"begin": "/*",
+			"end": "*/"
+		},
+		{
+			"begin": "\"",
+			"end": "\""
+		},
+		{
+			"begin": "'",
+			"end": "'"
+		},
+		{
+			"begin": "[",
+			"end": "]"
+		},
+		{
+			"begin": "(",
+			"end": ")"
+		}
+	]
+}

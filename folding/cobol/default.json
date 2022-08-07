@@ -1,0 +1,26 @@
+{
+	"cobol": [
+		{
+			"beginRegex": "\\s{1,4}\\S+\\s+DIVISION",
+			"endRegex": ".(?=\\s{1,4}\\S+\\s+DIVISION)",
+			"foldLastLine": false,
+			"foldEOF": true,
+		},
+		{
+			"beginRegex": "\\s{1,4}\\S+\\s+SECTION",
+			"endRegex": ".(?=.\\s{1,4}\\S+\\s+(?:SECTION|DIVISION))",
+			"foldLastLine": false,
+			"foldEOF": true,
+		},
+	],
+	"cobol": [
+		{
+			"separatorRegex": "\\S+\\s+DIVISION",
+			"descendants": [
+				{
+					"separatorRegex": "\\S+\\s+SECTION",
+				}
+			]
+		},
+	],
+}

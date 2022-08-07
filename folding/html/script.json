@@ -1,0 +1,8 @@
+{
+	"html": [
+		{
+			"beginRegex": "<(?!area|base|br|col|embed|hr|img|input|link|menuitem|meta|param|source|track|wbr)([a-zA-Z]+)[^>\\/]*>",
+			"endRegex": "<\\/\\1>"
+		},
+	]
+}
